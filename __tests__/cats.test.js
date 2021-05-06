@@ -22,7 +22,7 @@ it('GET /api/cats', async () => {
 
 });
 
-it('GET /api/cats/1', async () => {
+test('GET /api/cats/1', async () => {
   const expected = { name: 'felix' };
 
   const response = await request.get('/api/cats/1');
@@ -32,7 +32,7 @@ it('GET /api/cats/1', async () => {
 
 });
 
-it('GET /api/cats/:id', async () => {
+test('GET /api/cats/:id', async () => {
   const expected = { name: 'felix' };
 
   const response = await request.get('/api/cats/:id');
